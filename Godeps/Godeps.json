@@ -1,5 +1,5 @@
 {
-	"ImportPath": "dooify-api",
+	"ImportPath": "go-template",
 	"GoVersion": "go1.3.1",
 	"Deps": [
 		{
