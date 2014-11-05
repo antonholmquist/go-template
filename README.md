@@ -1,36 +1,51 @@
+# Project template for Go
 
-# Export GOPATH
+### Export GOPATH
 
-Should be set to your workspace directory  
-`export GOPATH=~/Projects PATH=$PATH:~/Projects/bin`
+Should be set to your workspace directory
 
-# Make sure this project is in the right folder
+```bash
+$ export GOPATH=~/Projects
+$ export PATH=$PATH:~/Projects/bin
+```
 
-`~/Projects/src/go-template`
+### Make sure this project is in the right folder
 
-# Install mercurial
+```bash
+$ ~/Projects/src/go-template
+```
+
+### Install mercurial
 
 Needed to install godep
 
-`brew install mercurial`
+```bash
+$ brew install mercurial
+```
 
-# Install godep
+### Install godep
 
-`go get github.com/tools/godep`
+```bash
+$ go get github.com/tools/godep
+```
 
-# Copy dependencies from local project into workspace
+### Copy dependencies from local project into workspace
 
-`godep restore`
+```bash
+$ godep restore
+```
 
-# Run
+### Run
 
-`go install`  
-`$GOPATH/bin/go-template`
+```bash
+$ go install $GOPATH/bin/go-template
+```
 
-# Heroku
+### Heroku
 
 1. Make sure we have buildback (requires heroku toolbelt)
-heroku config:set BUILDPACK_URL=https://github.com/kr/heroku-buildpack-go.git
+
+        $ heroku config:set BUILDPACK_URL=https://github.com/kr/heroku-buildpack-go.git
 
 2. Procfile
 The name of the binary that heroku should launch. This will be name of the folder that the app is in.
