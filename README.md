@@ -18,3 +18,8 @@ go get github.com/tools/godep
 # Copy dependencies from local project into workspace
 
 godep restore
+
+# Run
+
+go install
+./go-template

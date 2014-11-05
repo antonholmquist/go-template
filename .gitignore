@@ -7,3 +7,5 @@
 .DS_Store
 pkg
 bin
+
+go-template

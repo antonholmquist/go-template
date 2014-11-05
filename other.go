@@ -5,6 +5,6 @@ import (
 )
 
 func other() {
-	fmt.Println("other function!")
+	fmt.Println("function in other.go!")
 }
 

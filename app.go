@@ -27,6 +27,9 @@ func main() {
 		port = "3000"
 	}
 
+	// Call method in other file
+	other() 
+
 	// gorilla/mux is a powerful URL router and dispatcher.
 	router := mux.NewRouter()
 
