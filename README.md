@@ -21,5 +21,5 @@ godep restore
 
 # Run
 
-go install
+go install  
 ./go-template
