@@ -20,5 +20,5 @@ Needed to install godep
 
 # Run
 
-`go build`
+`go build`  
 `/go-template`
