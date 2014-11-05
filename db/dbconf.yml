@@ -1,0 +1,3 @@
+development:
+    driver: postgres
+    open: host=localhost port=5432 user=antonholmquist dbname=test sslmode=disable

@@ -1,0 +1,38 @@
+{
+	"ImportPath": "dooify-api",
+	"GoVersion": "go1.3.1",
+	"Deps": [
+		{
+			"ImportPath": "code.google.com/p/go.crypto/bcrypt",
+			"Comment": "null-230",
+			"Rev": "228579b1f8ccfc93ed9f1709e32e8361ffc9a7ae"
+		},
+		{
+			"ImportPath": "code.google.com/p/go.crypto/blowfish",
+			"Comment": "null-230",
+			"Rev": "228579b1f8ccfc93ed9f1709e32e8361ffc9a7ae"
+		},
+		{
+			"ImportPath": "github.com/codegangsta/negroni",
+			"Comment": "v0.1-32-gc64702c",
+			"Rev": "c64702ca03d0f858ab7866638b69e85f0d4c6ee7"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "14f550f51af52180c2eefed15e5fd18d63c0a64a"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "e444e69cbd2e2e3e0749a2f3c717cec491552bbf"
+		},
+		{
+			"ImportPath": "github.com/jmoiron/sqlx",
+			"Comment": "sqlx-v1.0-49-g79215a1",
+			"Rev": "79215a1536dd456d2a5afa112479b4f67fbe9f21"
+		},
+		{
+			"ImportPath": "github.com/lib/pq",
+			"Rev": "7175accbed18058468c07811f76440d6e8d7cf19"
+		}
+	]
+}
