@@ -4,6 +4,10 @@
 Should be set to your workspace directory  
 `export GOPATH=~/Projects PATH=$PATH:~/Projects/bin`
 
+# Make sure this project is in the right folder
+
+`~/Projects/src/go-template`
+
 # Install mercurial
 
 Needed to install godep
@@ -20,5 +24,5 @@ Needed to install godep
 
 # Run
 
-`go build`  
-`/go-template`
+`go install`  
+`$GOPATH/bin/go-template`

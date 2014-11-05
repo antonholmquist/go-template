@@ -6,6 +6,7 @@ import (
 	"github.com/gorilla/mux"
 	"net/http"
 	"os"
+	//"go-template/folder"
 )
 
 func HeaderMiddleware(res http.ResponseWriter, req *http.Request, next http.HandlerFunc) {
@@ -29,6 +30,9 @@ func main() {
 
 	// Call method in other file
 	other() 
+
+	// Call method in other folder
+	//OtherFolder()
 
 	// gorilla/mux is a powerful URL router and dispatcher.
 	router := mux.NewRouter()
