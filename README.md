@@ -26,3 +26,12 @@ Needed to install godep
 
 `go install`  
 `$GOPATH/bin/go-template`
+
+# Heroku
+
+1. Make sure we have buildback (requires heroku toolbelt)
+heroku config:set BUILDPACK_URL=https://github.com/kr/heroku-buildpack-go.git
+
+2. Procfile
+The name of the binary that heroku should launch. This will be name of the folder that the app is in.
+web: go-template
