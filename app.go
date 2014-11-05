@@ -1,15 +1,11 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 	"github.com/codegangsta/negroni"
 	"github.com/gorilla/mux"
-	"github.com/jmoiron/sqlx"
-	_ "github.com/lib/pq"
 	"net/http"
 	"os"
-	"code.google.com/p/go.crypto/bcrypt"
 )
 
 func HeaderMiddleware(res http.ResponseWriter, req *http.Request, next http.HandlerFunc) {
@@ -28,7 +24,7 @@ func main() {
 	port := os.Getenv("PORT")
 
 	if len(port) == 0 {
-		port = "3001"
+		port = "3000"
 	}
 
 	// gorilla/mux is a powerful URL router and dispatcher.
@@ -37,7 +33,7 @@ func main() {
 	router.Methods("GET").Path("/").HandlerFunc(func(res http.ResponseWriter, req *http.Request) {
 
 		res.Header().Set("Content-Type", "text/plain")
-		res.Write([]byte("test application"))
+		res.Write([]byte("template application"))
 	})
 
 	fmt.Println("Starting server on port", port)
